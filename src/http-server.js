@@ -98,7 +98,7 @@ function HTTPServer(port, host, stat_func, system_info_func,
     // expectation.
     function handle_get_bosh_request(req, res, u) {
         var ppos = u.pathname.search(bosh_options.path);
-        if (req.method === 'GET' && ppos !== -1 && u.query.hasOwnProperty('data')) {
+        if (req.method === 'GET' && ppos !== -1 && u.query.data) {
             res = new helper.JSONPResponseProxy(req, res);
             res.request_headers = req.headers;
 
