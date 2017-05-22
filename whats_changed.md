@@ -3,6 +3,18 @@ deployments. If you are a system administrator who is
 maintaining/administering a node-xmpp-bosh installation, you might
 want to check this file every time you update your copy.
 
+### v0.7.13
+
+* Fix issue where statistics were broken due to hasOwnProperty
+
+### v0.7.12
+
+* Update dependencies
+
+### v0.7.11
+
+* Update dependencies
+
 ### v0.7.10
 
 * Update docs. and links. Thanks @Neustradamus

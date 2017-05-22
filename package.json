@@ -1,6 +1,6 @@
 {
   "name": "node-bosh",
-  "version": "0.7.12",
+  "version": "0.7.13",
   "main": "./src/main",
   "bin": {
     "bosh-server": "./run-server.js"
