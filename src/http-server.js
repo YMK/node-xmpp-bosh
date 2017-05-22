@@ -205,7 +205,7 @@ function HTTPServer(port, host, stat_func, system_info_func,
 
     function handle_get_statistics(req, res, u) {
         var ppos = u.pathname.search(bosh_options.path);
-        if (req.method === 'GET' && ppos !== -1 && !u.query.hasOwnProperty('data')) {
+        if (req.method === 'GET' && ppos !== -1 && !u.query.data) {
             var _headers = { };
             dutil.copy(_headers, bosh_options.HTTP_GET_RESPONSE_HEADERS);
             _headers['Content-Type'] = 'text/html; charset=utf-8';
